@@ -1,0 +1,74 @@
+﻿@model HaloweenHeist.Models.EinteinsPuzzle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EinteinsPuzzle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PuzzleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PuzzleId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Drink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Drink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShirtColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShirtColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hobby)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hobby)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
