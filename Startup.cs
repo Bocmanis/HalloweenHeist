@@ -9,6 +9,8 @@ namespace HaloweenHeist
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            RandomHolder.Random = new System.Random();
+            var first = RandomHolder.Random.Next(100);
         }
     }
 }

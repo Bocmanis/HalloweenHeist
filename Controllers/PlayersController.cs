@@ -49,7 +49,7 @@ namespace HaloweenHeist.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Surname,Alias,GameStage,RicketyBridgeId,EinsteinsPuzzleId,EinteinsAnswer")] Player player)
+        public ActionResult Create([Bind(Include = "Id,UniqueId,Name,Surname,Alias,GameStage,RicketyBridgeId,EinsteinsPuzzleId,EinteinsAnswer")] Player player)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace HaloweenHeist.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Surname,Alias,GameStage,RicketyBridgeId,EinsteinsPuzzleId,EinteinsAnswer")] Player player)
+        public ActionResult Edit([Bind(Include = "Id,UniqueId,Name,Surname,Alias,GameStage,RicketyBridgeId,EinsteinsPuzzleId,EinteinsAnswer")] Player player)
         {
             if (ModelState.IsValid)
             {

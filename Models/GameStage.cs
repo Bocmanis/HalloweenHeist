@@ -5,6 +5,7 @@
         Start,
         FirstDone,
         SecondDone,
-        Finished
+        Finished,
+        Lost
     }
 }

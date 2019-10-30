@@ -7,6 +7,7 @@ namespace HaloweenHeist.Models
 {
     public class Player
     {
+        public Guid? UniqueId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Alias { get; set; }
@@ -17,5 +18,7 @@ namespace HaloweenHeist.Models
         public Drink EinteinsAnswer { get; set; }
         public RicketyBridge RicketyBridge { get; set; }
         public EinteinsPuzzle EinteinsPuzzle { get; set; }
+
+        public string Stage3Answer { get; set; }
     }
 }
