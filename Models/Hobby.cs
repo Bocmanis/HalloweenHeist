@@ -6,6 +6,9 @@
         Cycling,
         Gaming,
         Swimming,
-        Reading
+        Reading,
+        Dancing,
+        Fishing,
+        Gardening
     }
 }

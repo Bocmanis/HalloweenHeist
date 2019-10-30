@@ -1,0 +1,66 @@
+﻿@model HaloweenHeist.Models.RicketyBridge
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RicketyBridge</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WrongAnswer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WrongAnswer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorrectAnswer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorrectAnswer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Speedster1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speedster1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Speedster2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speedster2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SlowPoke1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SlowPoke1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SlowPoke2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SlowPoke2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -6,6 +6,12 @@
         French,
         Italian,
         Greek,
-        Spanish
+        Spanish,
+        Polish,
+        Dane,
+        Swede,
+        Finnish,
+        British,
+        Irish,
     }
 }

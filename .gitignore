@@ -334,3 +334,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/App_Data/wdwd/DefaultConnection_log.ldf
+/App_Data/wdwd/DefaultConnection.mdf
+/App_Data/wdwd/aspnet-HaloweenHeist-20191029105441_log.ldf
+/App_Data/wdwd/aspnet-HaloweenHeist-20191029105441.mdf

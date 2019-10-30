@@ -6,6 +6,11 @@
         Green,
         Blue,
         Black,
-        White
+        White,
+        Brown,
+        Yellow,
+        Orange,
+        Purple,
+        Gray
     }
 }

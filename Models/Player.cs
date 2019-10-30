@@ -14,7 +14,7 @@ namespace HaloweenHeist.Models
         public GameStage GameStage { get; set; }
         public int RicketyBridgeId { get; set; }
         public int EinsteinsPuzzleId { get; set; }
-
+        public Drink EinteinsAnswer { get; set; }
         public RicketyBridge RicketyBridge { get; set; }
         public EinteinsPuzzle EinteinsPuzzle { get; set; }
     }

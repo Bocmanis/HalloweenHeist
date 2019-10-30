@@ -6,6 +6,10 @@
         Tea,
         Coffee,
         Beer,
-        Milk
+        Milk,
+        Soda,
+        Juice,
+        Wine,
+        Lemonade
     }
 }

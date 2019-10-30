@@ -116,6 +116,55 @@ namespace HaloweenHeist.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet, ActionName("Seed")]
+        public ActionResult Seed()
+        {
+            var drinks = Enum.GetValues(typeof(Drink)).Cast<Drink>();
+            var hobbies = Enum.GetValues(typeof(Hobby)).Cast<Hobby>();
+            var names = Enum.GetValues(typeof(Name)).Cast<Name>();
+            var shirtColours = Enum.GetValues(typeof(ShirtColor)).Cast<ShirtColor>();
+            var nationalities = Enum.GetValues(typeof(Nationality)).Cast<Nationality>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                List<EinteinsPuzzle> puzzleSet = GetPuzzleSet(drinks, hobbies, names, shirtColours, nationalities);
+
+                db.EinteinsPuzzles.AddRange(puzzleSet);
+                db.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        private static List<EinteinsPuzzle> GetPuzzleSet(IEnumerable<Drink> drinks, IEnumerable<Hobby> hobbies, IEnumerable<Name> names, IEnumerable<ShirtColor> shirtColours, IEnumerable<Nationality> nationalities)
+        {
+            drinks = drinks.OrderBy(x => Guid.NewGuid()).ToList();
+            hobbies = hobbies.OrderBy(x => Guid.NewGuid()).ToList();
+            names = names.OrderBy(x => Guid.NewGuid()).ToList();
+            shirtColours = shirtColours.OrderBy(x => Guid.NewGuid()).ToList();
+            nationalities = nationalities.OrderBy(x => Guid.NewGuid()).ToList();
+
+            var puzzleSet = new List<EinteinsPuzzle>();
+            var id = Guid.NewGuid();
+
+            for (int i = 0; i < 5; i++)
+            {
+                var einsteins = new EinteinsPuzzle()
+                {
+                    Drink = drinks.ElementAt(i),
+                    Hobby = hobbies.ElementAt(i),
+                    Nationality = nationalities.ElementAt(i),
+                    ShirtColor = shirtColours.ElementAt(i),
+                    Name = names.ElementAt(i),
+                    PuzzleId = id,
+                    Position = i,
+                };
+                puzzleSet.Add(einsteins);
+            }
+
+            return puzzleSet;
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

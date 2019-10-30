@@ -6,6 +6,20 @@
         Ted,
         Dave,
         John,
-        Oliver
+        Oliver,
+        Emma,
+        Olivia,
+        Ava,
+        Amelia,
+        Harper,
+        Ella,
+        Sofia,
+        Lily,
+        Grace,
+        Zoey,
+        Noah,
+        Lucas,
+        Jacob,
+        Daniel
     }
 }
