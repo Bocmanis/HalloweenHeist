@@ -2,15 +2,15 @@
 {
     public enum ShirtColor
     {
-        Red,
-        Green,
-        Blue,
-        Black,
-        White,
-        Brown,
-        Yellow,
-        Orange,
-        Purple,
-        Gray
+        red,
+        green,
+        blue,
+        black,
+        white,
+        brown,
+        yellow,
+        orange,
+        purple,
+        gray
     }
 }

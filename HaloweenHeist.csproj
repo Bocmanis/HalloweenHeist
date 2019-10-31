@@ -224,6 +224,18 @@
     <Compile Include="Migrations\201910302247335_AddAnswer.designer.cs">
       <DependentUpon>201910302247335_AddAnswer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910311138372_AddedTimeStamps.cs" />
+    <Compile Include="Migrations\201910311138372_AddedTimeStamps.designer.cs">
+      <DependentUpon>201910311138372_AddedTimeStamps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910311141460_AddedTimeStampsWNull.cs" />
+    <Compile Include="Migrations\201910311141460_AddedTimeStampsWNull.designer.cs">
+      <DependentUpon>201910311141460_AddedTimeStampsWNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910311205309_RequiredAlias.cs" />
+    <Compile Include="Migrations\201910311205309_RequiredAlias.designer.cs">
+      <DependentUpon>201910311205309_RequiredAlias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Name.cs" />
@@ -360,6 +372,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910302247335_AddAnswer.resx">
       <DependentUpon>201910302247335_AddAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910311138372_AddedTimeStamps.resx">
+      <DependentUpon>201910311138372_AddedTimeStamps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910311141460_AddedTimeStampsWNull.resx">
+      <DependentUpon>201910311141460_AddedTimeStampsWNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910311205309_RequiredAlias.resx">
+      <DependentUpon>201910311205309_RequiredAlias.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

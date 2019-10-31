@@ -2,14 +2,14 @@
 {
     public enum Drink
     {
-        Water,
-        Tea,
-        Coffee,
-        Beer,
-        Milk,
-        Soda,
-        Juice,
-        Wine,
-        Lemonade
+        water,
+        tea,
+        coffee,
+        beer,
+        milk,
+        soda,
+        juice,
+        wine,
+        lemonade
     }
 }

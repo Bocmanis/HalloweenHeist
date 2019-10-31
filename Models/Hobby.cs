@@ -2,13 +2,13 @@
 {
     public enum Hobby
     {
-        Running,
-        Cycling,
-        Gaming,
-        Swimming,
-        Reading,
-        Dancing,
-        Fishing,
-        Gardening
+        running,
+        cycling,
+        gaming,
+        swimming,
+        reading,
+        dancing,
+        fishing,
+        gardening
     }
 }

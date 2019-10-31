@@ -1,10 +1,10 @@
 ﻿@model HaloweenHeist.Models.Player
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Halloween heist";
 }
 
-<h2>Create</h2>
+<h3>Welcome to Halloween Heist 2019!</h3>
 
 
 @using (Html.BeginForm())
@@ -12,8 +12,26 @@
     @Html.AntiForgeryToken()
 
 <div class="form-horizontal">
-    <h4>Player</h4>
     <hr />
+    @if (Model.GameStage == HaloweenHeist.Models.GameStage.Lost)
+    {
+        <h2>Wooops! That was not the correct answer! You can try again. If you have guts for that. </h2>
+        <h4>Do let me know if you think this was a bug :)</h4>
+        <br />
+        <br />
+
+    }
+    @if (Model.GameStage == HaloweenHeist.Models.GameStage.Finished)
+    {
+        <h2>All done! Your answer has been submitted and will be reviewed whenever I please. I hope you enjoyed Halloween heist, you HUMAN/GENIUS you.(maybe even ultimate, who knows)</h2>
+        <br />
+        <br />
+    }
+    <p>Rules are simple. </p>
+    <p>Complete these tasks three and if you are the fastest, you will earn epic bragging rights and maybe a small commemorative item to remind of this amazing feat.</p>
+    <p>To play, just enter your name and alias, because people sure do love nicknames. A wrong answer in first two stages will cause you to lose, but you can try again if you wish. Third stage is final and requires manual checking, so I will let everyone suffer in the unknown. Your final answer will be both correct and wrong until I say otherwise</p>
+    <p>After starting you will see a unique identifier, you can use it to resume your progress in Heist.</p>
+    <p>This is where I would put some gifs from Brooklyn Nine Nine if I wasn't so Peralta. NINE NINE</p>
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
         @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -48,7 +66,18 @@
     </div>
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
+            @if (Model.GameStage == HaloweenHeist.Models.GameStage.Finished || Model.GameStage == HaloweenHeist.Models.GameStage.Lost)
+            {
+                <input type="submit" value="Go again!" class="btn btn-default" />
+            }
+            else if (Model.GameStage == HaloweenHeist.Models.GameStage.None)
+            {
+                <input type="submit" value="Let's go!" class="btn btn-default" />
+            }
+            else
+            {
+            <input type="submit" value="Resume" class="btn btn-default" />
+            }
         </div>
     </div>
 </div>
