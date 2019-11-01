@@ -213,21 +213,21 @@ What is the fastest time they all can get through the tunnel?
             sb.Append("The four travelers meet their friend and all of them decide to celebrate. However, in the morning, they discover that one of them has been poisoned.\n They all put their heads togehter to recall events from previous night, in order to find out which type of the drinks was poisoned.\n Luckily, each of them chose a different drink that night. Also, they sat on the couch in a row.");
             sb.AppendLine($"These are the clues they gathered.\n Help them to find out which drink was poisoned and killed their friend {puzzleSet[3].Name} \n");
 
-            sb.AppendLine($"The person who enjoys {puzzleSet[2].Hobby} wore {puzzleSet[2].ShirtColor} shirt");
-            sb.AppendLine($"The person who enjoys {puzzleSet[4].Hobby} drank {puzzleSet[4].Drink}");
-            sb.AppendLine($"The person who enjoys {puzzleSet[1].Hobby} is {puzzleSet[1].Nationality}");
-            sb.AppendLine($"The person wearing {puzzleSet[3].ShirtColor} shirt sat on the left of person wearing {puzzleSet[4].ShirtColor} shirt");
-            sb.AppendLine($"The person wearing {puzzleSet[3].ShirtColor} shirt is {puzzleSet[3].Nationality}");
-            sb.AppendLine($"{puzzleSet[2].Name} drank {puzzleSet[2].Drink}");
-            sb.AppendLine($"{puzzleSet[0].Name} wore {puzzleSet[0].ShirtColor} shirt");
-            sb.AppendLine($"The person sitting is the middle is {puzzleSet[2].Nationality}");
-            sb.AppendLine($"The person who enjoys {puzzleSet[0].Hobby} sat one the leftmost side");
-            sb.AppendLine($"{puzzleSet[1].Name} sat next to the person who drank {puzzleSet[0].Drink}");
-            sb.AppendLine($"The person who drank {puzzleSet[1].Drink} sat next to {puzzleSet[0].Name}");
+            sb.AppendLine($"The person who is {puzzleSet[2].Nationality} wore {puzzleSet[2].ShirtColor} shirt");
             sb.AppendLine($"{puzzleSet[4].Name} is {puzzleSet[4].Nationality}");
-            sb.AppendLine($"{puzzleSet[3].Name} enjoys {puzzleSet[3].Hobby}");
-            sb.AppendLine($"The person who enjoys{puzzleSet[0].Hobby} sat next to person wearing {puzzleSet[1].ShirtColor} shirt");
-            sb.AppendLine($"{puzzleSet[1].Name} sat next to a person who is {puzzleSet[0].Nationality}");
+            sb.AppendLine($"The person who is {puzzleSet[1].Nationality} drank {puzzleSet[1].Drink}");
+            sb.AppendLine($"The person wearing {puzzleSet[3].ShirtColor} shirt sat on the left of person wearing {puzzleSet[4].ShirtColor} shirt");
+            sb.AppendLine($"The person wearing {puzzleSet[3].ShirtColor} drank {puzzleSet[3].Drink}");
+            sb.AppendLine($"{puzzleSet[2].Name} enjoys {puzzleSet[2].Hobby}");
+            sb.AppendLine($"The person who enjoys {puzzleSet[0].Hobby} wore {puzzleSet[0].ShirtColor} shirt");
+            sb.AppendLine($"The person sitting is the middle drank {puzzleSet[2].Drink}");
+            sb.AppendLine($"The person who is {puzzleSet[0].Nationality} sat one the leftmost side");
+            sb.AppendLine($"The person who enjoys {puzzleSet[1].Hobby} sat next to {puzzleSet[0].Name}");
+            sb.AppendLine($"{puzzleSet[1].Name} sat next to the person who enjoys {puzzleSet[0].Hobby}");
+            sb.AppendLine($"The person who enjoys {puzzleSet[4].Hobby} drank {puzzleSet[4].Drink}");
+            sb.AppendLine($"The person who is {puzzleSet[3].Nationality} enjoys {puzzleSet[3].Hobby}");
+            sb.AppendLine($"The person who is {puzzleSet[0].Nationality} sat next to person wearing {puzzleSet[1].ShirtColor} shirt");
+            sb.AppendLine($"The person who enjoys {puzzleSet[1].Hobby} sat next to a person who drank {puzzleSet[0].Drink}");
 
             return sb.ToString();
         }
