@@ -10,7 +10,7 @@ namespace HaloweenHeist.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "HalloweenHeist");
         }
     }
 }

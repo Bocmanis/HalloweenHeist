@@ -3,6 +3,8 @@
 @{
     ViewBag.Title = "Which drink was poisoned?";
 }
+    <br /><div>Hello, @Html.DisplayFor(model => model.UserId)</div>
+<p>(user id is stored in a cookie, but it might be useful to keep a copy if you "accidentally" clear them or want to use other browser/machine</p>
 
 <h2>Task 2/3   The poisoned drink</h2>
 
@@ -11,24 +13,24 @@
 {
     @Html.AntiForgeryToken()
 
-<div class="form-horizontal">
-    <hr />
-    <h4>Hello @Html.DisplayFor(model => model.UserId)</h4>
-    <p>@Html.DisplayFor(model=>model.TaskText)</p>
-    <div class="form-group">
-        @Html.LabelFor(model => model.Answer, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Answer, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Answer, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <hr />
+        <b>There has been changes in this task, as it was impossible to complete. Please recheck the clues</b>
+        <pre>@Html.DisplayFor(model => model.TaskText)</pre>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Answer, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Answer, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Answer, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Submit" class="btn btn-default" />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
         </div>
     </div>
-</div>
 }
 
 @section Scripts {
